@@ -1,0 +1,78 @@
+.user-block{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 16px;
+  position: absolute;
+  height: 65px;
+  top: 16px;
+  right: 16px;
+  align-items: center;
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    row-gap: 10px;
+  }
+
+  &__messages{
+    cursor: pointer;
+    height: 100%;
+    border: 1px solid rgb(177, 177, 177, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    @media screen and (max-width: 768px){
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__user{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+    padding: 12px 18px 10px 17px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 16px rgba(136, 167, 245, 0.18);
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+
+  }
+
+  &__letter-img{
+    position: relative;
+    @media screen and (max-width: 768px){
+      width: 24px;
+    }
+  }
+
+  &__envelope{
+  }
+
+  &__envelope-circle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(5px, -5px);
+  }
+
+  &__user-photo{
+    flex-shrink: 0;
+    border-radius: 100%;
+    border: 2px solid rgb(177, 177, 177, 0.5);
+  }
+}
+
+.popover{
+  display: none;
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
+}

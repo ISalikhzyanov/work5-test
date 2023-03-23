@@ -1,0 +1,30 @@
+.markets{
+  position: relative;
+  padding: 97px 124px 20px 59px;
+  @media screen and (max-width: 1200px){
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 768px){
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &__btn{
+    width: 185px;
+    margin-bottom: 35.5px;
+  }
+
+  &__loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgb(52, 52, 52, 0.1);
+  }
+}

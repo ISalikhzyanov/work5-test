@@ -1,0 +1,93 @@
+.markets-popup{
+
+  &__selects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 47px;
+  }
+
+  &__select{
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    width: 240px;
+  }
+
+  &__block-headers{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__domen{
+    width: 567px;
+    margin-bottom: 32px;
+    &__input{
+      display: flex;
+      flex-direction: row;
+      height: 36px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &__warning{
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    margin-bottom: 44px;
+    &__text{
+      max-width: 488px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &__img{
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &__btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+    max-width: 312px;
+  }
+
+  &__btn{
+    width: 151px;
+  }
+}
+
+
+.purple-input{
+  display: flex;
+  justify-content: center;
+  width: 27%;
+  background: #6666CC;
+  color: #FFFFFF;
+  height: 36px;
+  align-items: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.gray-input{
+  width: 73%;
+  background: #E6E6E9;
+  color: #7D7D7D;
+  border: none;
+  height: 36px;
+  border-radius: 4px 0 0 4px;
+  padding-left: 14px;
+}
+
+.form-select{
+  padding: 7px 15px 8px 14px !important;
+  height: 36px !important;
+  width: 240px;
+}

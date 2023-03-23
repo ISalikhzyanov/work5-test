@@ -1,0 +1,28 @@
+.base-popup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vw;
+  width: 100vw;
+  z-index: 9999;
+
+  &__close-btn{
+    position: absolute;
+    top: 30px;
+    right: 22px;
+    cursor: pointer;
+  }
+
+  &__content{
+    top: 10%;
+    left: 20%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 30px 38px rgba(37, 37, 37, 0.1);
+    padding: 30px 20px 35px 30px;
+    position: absolute;
+  }
+}
