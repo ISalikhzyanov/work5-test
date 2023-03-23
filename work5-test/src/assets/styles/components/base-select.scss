@@ -26,7 +26,9 @@
 
   &__dropdown{
     list-style: none;
+    position: relative;
     z-index: 10;
+    width: 100%;
     background-color: #FFFFFF;
     border: 1px solid #CDCDCD;
     border-top: none;

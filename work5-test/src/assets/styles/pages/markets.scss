@@ -26,5 +26,8 @@
     height: 100%;
     z-index: 9999;
     background: rgb(52, 52, 52, 0.1);
+    @media screen and (max-width: 868px){
+      position: fixed;
+    }
   }
 }

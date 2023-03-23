@@ -1,0 +1,36 @@
+.not-working{
+  position: relative;
+  width: calc(100vw - 256px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 15px;
+  @media screen and (max-width: 868px){
+    width: 100vw;
+    padding: 10px;
+  }
+  &__images{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  &__description{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+h1{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 21px;
+
+  @media screen and (max-width: 480px){
+    font-size: 22px;
+  }
+}

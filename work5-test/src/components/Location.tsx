@@ -25,10 +25,10 @@ function Location() {
     }
     return (
         <div className="location">
-            <Link to="/" className="location__home">Главная</Link>
+            { location.pathname !== '/' && <Link to="/" className="location__home">Главная</Link>}
             { useLocation().pathname !== '/' && <div className="location__page-name">
                 <img src={arrow}/>
-                <span>{getPathname()}</span>
+                <span className="text-lg-start">{getPathname()}</span>
             </div> }
         </div>
     );

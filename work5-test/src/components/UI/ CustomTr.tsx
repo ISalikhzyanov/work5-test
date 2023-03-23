@@ -37,7 +37,7 @@ function CustomTr({project}: {project: IProject}) {
                         <BaseButton btn={editBtn} text="Редактировать" />
                     </div>
                     <div onClick={()=> removeProject(project)} className="markets-table__btn">
-                        <BaseButton btn={removeBtn} text="Редактировать" />
+                        <BaseButton btn={removeBtn} text="Удалить" />
                     </div>
                 </div>
             </td>

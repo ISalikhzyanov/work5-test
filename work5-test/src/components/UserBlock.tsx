@@ -1,19 +1,14 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import '../assets/styles/components/user-block.scss'
 import envelope from '../assets/img/user-block/envelope.svg'
 import envelopeCircle from  '../assets/img/user-block/envelope-circle.svg'
 import {IUser} from "../types/User";
-//@ts-ignore
-import * as bootstrap from "bootstrap/dist/js/bootstrap.bundle.min"
 
 function UserBlock({user}: {user: IUser}) {
-    const popoverRef = useRef()
-    useEffect(() => {
-        const popover = new bootstrap.Popover(popoverRef.current, {
-            content: user.name,
-            title: "Пользователь"
-        })
-    })
+    const [showDropdown,setShowDropdown] = useState(false)
+    function handleChange () {
+        setShowDropdown(!showDropdown)
+    }
     return (
         <div className="user-block">
             <div className="user-block__messages">
@@ -28,16 +23,23 @@ function UserBlock({user}: {user: IUser}) {
                     />
                 </div>
             </div>
-            <div className="user-block__user">
+            <div onClick={handleChange} className="user-block__user">
                 <img
                     src={user.img}
                     className="user-block__user-photo"
                 />
                 <span>{user.name}</span>
+                {showDropdown && <ul className="user-block__dropdown">
+                    <li className="user-block__dropdown__item">Открыть профиль</li>
+                </ul>}
             </div>
             {/*@ts-ignore*/}
-            <div className="user-block__user popover" ref={popoverRef} >
+            <div onClick={handleChange} className="user-block__user popover">
                 <img src={user.img} className="user-block__user-photo" alt="no"/>
+                {showDropdown && <ul className="user-block__dropdown">
+                    <li className="user-block__dropdown__username">{user.name}</li>
+                    <li className="user-block__dropdown__item">Открыть профиль</li>
+                </ul>}
             </div>
         </div>
     );

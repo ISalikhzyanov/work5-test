@@ -6,6 +6,10 @@
     justify-content: space-between;
     margin-bottom: 30px;
     margin-top: 47px;
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+      row-gap: 10px;
+    }
   }
 
   &__select{
@@ -13,6 +17,9 @@
     flex-direction: column;
     row-gap: 11px;
     width: 240px;
+    @media screen and (max-width: 600px){
+      width: 100%;
+    }
   }
 
   &__block-headers{
@@ -22,7 +29,7 @@
   }
 
   &__domen{
-    width: 567px;
+    width: 100%;
     margin-bottom: 32px;
     &__input{
       display: flex;
@@ -57,10 +64,19 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1px;
     max-width: 312px;
+    @media screen and (max-width: 480px){
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 10px;
+      max-width: 100%;
+    }
   }
 
   &__btn{
     width: 151px;
+    @media screen and (max-width: 480px){
+      width: 100%;
+    }
   }
 }
 

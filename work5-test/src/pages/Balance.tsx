@@ -1,8 +1,12 @@
 import React from 'react';
+import NotWorking from "../components/NotWorking";
+import Location from "../components/Location";
 
 function Balance() {
     return (
-        <div></div>
+        <div>
+            <NotWorking/>
+        </div>
     );
 }
 
