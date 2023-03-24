@@ -64,7 +64,7 @@ export function fetchProjects() {
                    payload: r.data
                })
                dispatch(hideLoader())
-           }, 3000)
+           }, 2000)
        })
    }
 }
